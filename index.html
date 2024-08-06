@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>율촌 법무사사무소 홈페이지</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS 파일 연결 -->
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <header>
+        <h1>율촌 법무사사무소</h1>
+        <nav>
+            <ul>
+                <li><a href="#location">위치</a></li>
+                <li><a href="#contact">연락처</a></li>
+                <li><a href="#faq">자주 묻는 질문</a></li>
+                <li><a href="#qna">Q&A 게시판</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 헤더 끝 -->
+
+    <!-- 메인 콘텐츠 시작 -->
+    <main>
+        <!-- 위치 섹션 -->
+        <section id="location">
+            <h2>위치</h2>
+            <p>
+                경기도 수원시 권선구 정조로 432, 상가동 301호(세류동, 미영아파트)
+                <br>서울 1호선 세류역에서 500m 이내
+            </p>
+            <!-- 지도 이미지 또는 실제 지도 삽입 가능 -->
+            <img src="map.png" alt="사무실 위치 지도" style="width:100%;max-width:400px;">
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact">
+            <h2>연락처</h2>
+            <p>TEL: 031-241-8858~9</p>
+            <p>FAX: 031-624-0174</p>
+        </section>
+
+        <!-- 자주 묻는 질문(FAQ) 섹션 -->
+        <section id="faq">
+            <h2>자주 묻는 질문</h2>
+            <ul>
+                <li>
+                    <strong>Q: 운영 시간은 어떻게 되나요?</strong>
+                    <p>A: 월요일부터 금요일까지, 오전 9시부터 오후 6시까지 운영합니다.</p>
+                </li>
+                <li>
+                    <strong>Q: 주차 공간이 있나요?</strong>
+                    <p>A: 건물 내에 주차 공간은 따로 마련되어 있지 않습니다.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Q&A 게시판 섹션 -->
+        <section id="qna">
+            <h2>Q&A 게시판</h2>
+            <p>질문이 있으시면 아래 양식을 통해 문의해 주세요.</p>
+            <form>
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="question">질문:</label><br>
+                <textarea id="question" name="question" rows="5" cols="33" required></textarea><br><br>
+                <button type="submit">제출하기</button>
+            </form>
+        </section>
+    </main>
+    <!-- 메인 콘텐츠 끝 -->
+
+    <button id="scrollToTopBtn" title="Go to top">↑</button>    
+
+    <!-- 푸터 시작 -->
+    <footer>
+        <p>&copy; 2024 율촌 법무사사무소</p>
+    </footer>
+    <!-- 푸터 끝 -->
+
+    <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
+    
+</body>
+</html>
