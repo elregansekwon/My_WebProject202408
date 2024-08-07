@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f9; /* 배경색 추가 */
+    color: #333; /* 기본 텍스트 색상 */
 }
 
 header {
@@ -25,14 +27,25 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease; /* 색상 변화 애니메이션 추가 */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* 링크에 마우스를 올렸을 때 색상 */
 }
 
 main {
     padding: 20px;
+    min-height: calc(100vh - 140px); /* 헤더와 푸터를 제외한 최소 높이 설정 */
+    /* 푸터가 페이지 하단에 고정되도록 min-height 조정 */
 }
 
 section {
     margin-bottom: 20px;
+    background-color: #fff; /* 섹션 배경색 추가 */
+    padding: 15px;
+    border-radius: 5px; /* 섹션 모서리 둥글게 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 섹션 그림자 추가 */
 }
 
 footer {
@@ -44,10 +57,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* 푸터란? 
- HTML에서 가장 가까운 구획 콘텐츠나 구획 루트의 맨 아래 부분을 나타내며,
- 일반적으로 작성자, 저작권 정보, 관련 문서 등의 내용을 담음. */
 
 /* 맨 위로 버튼 스타일 */
 #scrollToTopBtn {
@@ -63,8 +72,22 @@ footer {
     cursor: pointer; /* 커서 모양 */
     padding: 15px; /* 버튼 패딩 */
     border-radius: 10px; /* 버튼 모서리 둥글게 */
+    transition: background-color 0.3s ease; /* 배경색 변화 애니메이션 추가 */
 }
 
 #scrollToTopBtn:hover {
     background-color: #333; /* 버튼에 마우스를 올렸을 때 배경색 */
+}
+
+/* 반응형 디자인 추가 */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
 }

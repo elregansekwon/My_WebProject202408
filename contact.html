@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홈 - 율촌 법무사사무소</title>
+    <title>연락처 - 율촌 법무사사무소</title>
     <link rel="stylesheet" href="style.css"> <!-- CSS 파일 연결 -->
 </head>
 <body>
     <!-- 헤더 시작 -->
     <header>
-        <h1>율촌 법무사사무소</h1>
+        <h1>연락처</h1>
         <nav>
             <ul>
                 <li><a href="index.html">홈</a></li>
@@ -22,11 +22,12 @@
     </header>
     <!-- 헤더 끝 -->
 
-    <!-- 메인 콘텐츠 시작 -->
+    <!-- 연락처 섹션 -->
     <main>
-        <section id="home">
-            <h2>환영합니다!</h2>
-            <p>율촌 법무사사무소에 오신 것을 환영합니다. 각 섹션을 클릭하여 더 많은 정보를 확인하세요.</p>
+        <section id="contact">
+            <h2>연락처</h2>
+            <p>TEL: 031-241-8858~9</p>
+            <p>FAX: 031-624-0174</p>
         </section>
     </main>
     <!-- 메인 콘텐츠 끝 -->
@@ -37,6 +38,11 @@
     </footer>
     <!-- 푸터 끝 -->
 
-    <script src="script.js"></script> <!-- JavaScript 파일 연결 -->
+    <script>
+        // 새로고침 시 홈으로 리다이렉트
+        window.addEventListener('beforeunload', function (e) {
+            window.location.href = 'index.html'; // 홈 페이지로 이동
+        });
+    </script>
 </body>
 </html>
