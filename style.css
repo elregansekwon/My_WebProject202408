@@ -12,6 +12,20 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px; /* 로고 이미지 너비 */
+    height: 50px; /* 로고 이미지 높이 */
+    margin-right: 10px; /* 로고와 텍스트 사이 간격 */
 }
 
 nav ul {
@@ -57,11 +71,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* 푸터란?
-스크롤한 페이지 끝부분에 있는 서비스 공통 상설 영역
-서비스 전반에 설치된 공통 인터페이스
-*/
 
 /* 맨 위로 버튼 스타일 */
 #scrollToTopBtn {

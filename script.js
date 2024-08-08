@@ -61,10 +61,28 @@ function displayQuestion(question) {
         <button onclick="deleteQuestion(${question.id})">삭제</button>
         <div>
             <label>답변:</label>
-            <textarea rows="2" cols="30" onchange="updateAnswer(${question.id}, this.value)">${question.answer}</textarea>
+            <textarea id="answer_${question.id}" rows="2" cols="30">${question.answer}</textarea>
+            <button onclick="submitAnswer(${question.id})">답변 제출</button>
+        </div>
+        <div id="answerDisplay_${question.id}" style="margin-top: 10px;">
+            ${question.answer ? `<strong>답변:</strong> ${question.answer}` : ''}
         </div>
     `;
     questionList.appendChild(listItem); // 질문을 목록에 추가
+}
+
+// 답변을 제출하는 함수
+function submitAnswer(id) {
+    const answerTextarea = document.getElementById(`answer_${id}`);
+    const answer = answerTextarea.value.trim();
+    if (answer) {
+        updateAnswer(id, answer);
+        const answerDisplay = document.getElementById(`answerDisplay_${id}`);
+        answerDisplay.innerHTML = `<strong>답변:</strong> ${answer}`;
+        answerTextarea.value = ''; // 답변 입력란 초기화
+    } else {
+        alert('답변을 입력해주세요.');
+    }
 }
 
 // 질문을 수정하는 함수
