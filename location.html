@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>위치 - 율촌 법무사사무소</title>
-    <link rel="stylesheet" href="style.css"> <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- 헤더 시작 -->
     <header>
-        <h1>위치</h1>
+        <div class="header-content">
+            <img src="logo.png" alt="율촌 법무사사무소 로고" class="logo-img">
+            <h1>율촌 법무사사무소</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">홈</a></li>
@@ -30,7 +33,6 @@
                 경기도 수원시 권선구 정조로 432, 상가동 301호(세류동, 미영아파트)
                 <br>서울 1호선 세류역에서 500m 이내
             </p>
-            <!-- 지도 이미지 또는 실제 지도 삽입 가능 -->
             <img src="map.png" alt="사무실 위치 지도" style="width:100%;max-width:400px;">
         </section>
     </main>
@@ -42,11 +44,6 @@
     </footer>
     <!-- 푸터 끝 -->
 
-    <script>
-        // 새로고침 시 홈으로 리다이렉트
-        window.addEventListener('beforeunload', function (e) {
-            window.location.href = 'index.html'; // 홈 페이지로 이동
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
